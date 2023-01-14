@@ -84,7 +84,7 @@ class PriorityQueue:
         key = nowNode.next.key
         nowNode.next = None
         self.q.root.key = key
-        #开始下沉
+        #Start to sink
         nowNode = self.q.root
         n=0
         while nowNode:
@@ -115,9 +115,9 @@ pq = PriorityQueue(4)
 pq.insert(0)
 pq.insert(5)
 pq.insert(2)
-print("现在的优先队列是")
+print("Now the priority quene is")
 pq.print()
 pq.delMin()
-print("del后的优先队列是")
+print("The priority quene after del is")
 pq.print()
 
